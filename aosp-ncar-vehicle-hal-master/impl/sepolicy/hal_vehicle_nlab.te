@@ -1,0 +1,9 @@
+type hal_vehicle_nlab, domain;
+type hal_vehicle_nlab_exec, exec_type, vendor_file_type, file_type;
+
+init_daemon_domain(hal_vehicle_nlab);
+
+hal_server_domain(hal_vehicle_nlab, hal_vehicle)
+
+# For changing VHAL property via System Property 
+get_prop(hal_vehicle_nlab, debug_prop)
